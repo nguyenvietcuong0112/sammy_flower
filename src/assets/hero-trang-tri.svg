@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F0F9FF"/>
+
+  <!-- Arch/Backdrop -->
+  <path d="M200 550 L200 200 C200 100 600 100 600 200 L600 550" stroke="#C084FC" stroke-width="15" fill="none"/>
+  
+  <!-- Drapery -->
+  <path d="M200 200 Q400 350 600 200" stroke="#E9D5FF" stroke-width="4" fill="#F3E8FF" opacity="0.5"/>
+  
+  <!-- Floral Decor on Arch -->
+  <circle cx="200" cy="200" r="40" fill="#F472B6"/>
+  <circle cx="600" cy="200" r="40" fill="#F472B6"/>
+  <circle cx="400" cy="100" r="50" fill="#F472B6"/>
+  
+  <!-- Balloons/Decor -->
+  <circle cx="150" cy="400" r="30" fill="#93C5FD" opacity="0.8"/>
+  <circle cx="650" cy="450" r="25" fill="#93C5FD" opacity="0.8"/>
+  <circle cx="180" cy="350" r="20" fill="#FCD34D" opacity="0.8"/>
+</svg>

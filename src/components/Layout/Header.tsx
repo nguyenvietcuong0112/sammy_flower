@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Flower, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import logo from "@/assets/sammy-logo.svg";
+
 const Header = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,11 +22,8 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Flower className="h-8 w-8 text-primary" />
-            <span className="font-heading text-2xl font-semibold text-foreground uppercase tracking-wider">
-              Sammy Flowers
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Sammy Flowers" className="h-14 w-auto object-contain hover:scale-105 transition-transform duration-300" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,8 +33,8 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className={`text-sm font-medium transition-colors hover:text-primary ${location.hash === item.href
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                  ? "text-primary"
+                  : "text-muted-foreground"
                   }`}
               >
                 {item.name}
@@ -69,8 +68,8 @@ const Header = () => {
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-sm font-medium transition-colors hover:text-primary ${location.hash === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                ? "text-primary"
+                : "text-muted-foreground"
                 }`}
             >
               {item.name}

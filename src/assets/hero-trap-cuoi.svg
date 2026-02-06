@@ -1,0 +1,23 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#FFF0F5"/>
+  
+  <!-- Background Elements -->
+  <circle cx="200" cy="100" r="150" fill="#FFC0CB" opacity="0.3"/>
+  <circle cx="600" cy="500" r="200" fill="#FFB6C1" opacity="0.2"/>
+
+  <!-- Tráp (Tray) Base -->
+  <path d="M200 400 L600 400 L550 500 L250 500 Z" fill="#D4AF37"/>
+  <rect x="200" y="380" width="400" height="20" fill="#C5A028"/>
+  
+  <!-- Content Stack (Pyramid shape for gifts) -->
+  <path d="M250 380 L350 200 L450 200 L550 380 Z" fill="#E11D48" opacity="0.9"/>
+  <rect x="350" y="200" width="100" height="180" fill="#BE123C"/>
+  
+  <!-- Decorative Ribbons/Flowers -->
+  <circle cx="400" cy="200" r="40" fill="#FFD700" stroke="#B45309" stroke-width="2"/>
+  <path d="M400 200 L380 300 M400 200 L420 300" stroke="#FFD700" stroke-width="5"/>
+  
+  <!-- Sparkles -->
+  <circle cx="300" cy="150" r="5" fill="#FFD700"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="500" cy="250" r="8" fill="#FFD700"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></circle>
+</svg>

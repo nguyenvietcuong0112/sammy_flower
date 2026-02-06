@@ -1,0 +1,28 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="roseGradient">
+      <stop offset="0%" stop-color="#FF9A9E" />
+      <stop offset="100%" stop-color="#FECFEF" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#FAF5FF"/>
+
+  <!-- Bouquet Wrapper -->
+  <path d="M350 350 L450 350 L420 550 L380 550 Z" fill="#9CA3AF"/>
+  
+  <!-- Ribbon -->
+  <path d="M360 400 C300 420 300 480 380 440" stroke="#E11D48" stroke-width="8" fill="none"/>
+  <path d="M440 400 C500 420 500 480 420 440" stroke="#E11D48" stroke-width="8" fill="none"/>
+
+  <!-- Flowers Halo -->
+  <circle cx="400" cy="250" r="140" fill="#FCE7F3" opacity="0.6"/>
+
+  <!-- Individual Flowers -->
+  <g transform="translate(400, 250)">
+    <circle cx="0" cy="0" r="40" fill="url(#roseGradient)" stroke="#E11D48" stroke-width="2"/>
+    <circle cx="-50" cy="40" r="35" fill="url(#roseGradient)" stroke="#E11D48" stroke-width="2"/>
+    <circle cx="50" cy="40" r="35" fill="#FECFEF" stroke="#E11D48" stroke-width="2"/>
+    <circle cx="-40" cy="-50" r="30" fill="#FECFEF" stroke="#E11D48" stroke-width="2"/>
+    <circle cx="40" cy="-50" r="30" fill="url(#roseGradient)" stroke="#E11D48" stroke-width="2"/>
+  </g>
+</svg>

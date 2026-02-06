@@ -8,16 +8,18 @@ import Footer from "@/components/Layout/Footer";
 import { motion } from "framer-motion";
 
 // ================= ASSETS =================
-// Hero Section Images
-import slide_1_image from "/src/assets/hero-slide-1.webp";
-import slide_2_image from "/src/assets/hero-slide-1.webp";
-import slide_3_image from "/src/assets/hero-slide-1.webp";
+// Hero Section Images (Updated User JPGs)
+import hero_trap from "/src/assets/traprongphuong.jpg";
+import hero_hoa from "/src/assets/hoacuoi.jpg";
+import hero_decor from "/src/assets/hero-decor.jpg";
+
 // Featured Collections Images
-import rose_cat from "/src/assets/roses-1.webp";
-import lillies_cat from "/src/assets/roses-1.webp";
-import orchid_cat from "/src/assets/roses-1.webp";
+import feat_trap from "/src/assets/trapbanhxuxue.jpg";
+import feat_mam from "/src/assets/trapruou.jpg";
+import feat_hoa from "/src/assets/hoacuoi.jpg";
 
-
+// About Section Image
+import about_img from "/src/assets/about-team.jpg";
 
 // ================= HERO SLIDES DATA =================
 type SlideItem = {
@@ -52,8 +54,8 @@ const slides: Slide[] = [
       "Mùa cưới đang đến rất gần rồi ạ, Sammy gửi tới cả nhà những mẫu tráp cưới – tráp hỏi tone đỏ đẹp xuất sắc, ảnh thật 100%. Đặt lễ – nhận đúng như hình, chỉn chu từng chi tiết.",
     price: "0394.17.8668",
     featured: "Cưới Hỏi Trọn Gói",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200",
-    imageSize: { width: 1200, height: 800 },
+    image: hero_trap,
+    imageSize: { width: 800, height: 600 },
     promo: {
       title: "Ưu Đãi Mùa Cưới",
       discount: "Freeship 10km",
@@ -81,7 +83,7 @@ const slides: Slide[] = [
       "Dịch vụ hoa tươi nghệ thuật, hoa bàn lễ, hoa cưới. Sammy mang đến sự tinh tế và sắc màu hạnh phúc cho ngày trọng đại của bạn.",
     price: "Giá tốt nhất",
     featured: "Hoa Tươi Nghệ Thuật",
-    image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&q=80&w=1200",
+    image: hero_hoa,
     promo: {
       title: "Combo Hoa Cưới",
       discount: "Tặng Hoa Cài Áo",
@@ -109,7 +111,7 @@ const slides: Slide[] = [
       "Trang trí phòng cưới, tiệc, khai trương, sinh nhật. Dịch vụ mâm cúng đầy tháng – thôi nôi trọn gói cho bé yêu.",
     price: "Chuyên nghiệp",
     featured: "Trang Trí Trọn Gói",
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200",
+    image: hero_decor,
     promo: {
       title: "Mâm Cúng Trọn Gói",
       discount: "Đầy đủ lễ vật",
@@ -146,19 +148,19 @@ const Index = () => {
     {
       title: "Tráp Rồng Phượng",
       description: "Kết hoa hiện đại, sang trọng và đẳng cấp",
-      image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=400",
+      image: feat_trap,
       link: "/#",
     },
     {
       title: "Mâm Quả Cao Cấp",
       description: "Chỉn chu từng chi tiết, sính lễ vẹn toàn",
-      image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&q=80&w=400",
+      image: feat_mam,
       link: "/#",
     },
     {
       title: "Hoa Cưới Nghệ Thuật",
       description: "Góp thêm sắc màu hạnh phúc cho cặp đôi",
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=400",
+      image: feat_hoa,
       link: "/#",
     },
   ];
@@ -347,7 +349,7 @@ const Index = () => {
                     <Card className="flower-card group cursor-pointer border-0 shadow-soft bg-card-gradient h-full overflow-hidden relative transition-all duration-700 ease-out">
                       <CardContent className="p-0 h-full flex flex-col items-center relative z-10">
                         {/* Image Container */}
-                        <div className="relative flex justify-center items-center pt-8 sm:pt-12 w-full">
+                        <div className="relative flex justify-center items-center pt-8 sm:pt-12 w-full px-4">
                           <motion.div
                             className="absolute w-24 h-24 sm:w-32 sm:h-32 bg-pink-200 rounded-full opacity-40 z-0"
                             animate={{ scale: [1, 1.2, 1] }}
@@ -360,8 +362,8 @@ const Index = () => {
                           <motion.img
                             src={collection.image}
                             alt={collection.title}
-                            className="w-32 sm:w-40 lg:w-48 h-auto object-contain z-10"
-                            whileHover={{ scale: 1.1, y: -5 }}
+                            className="w-48 h-48 sm:w-60 sm:h-60 object-cover z-10 rounded-2xl shadow-md"
+                            whileHover={{ scale: 1.05, y: -5 }}
                             transition={{ type: "spring", stiffness: 200 }}
                           />
                         </div>
@@ -442,9 +444,9 @@ const Index = () => {
                 className="relative w-full h-80 sm:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-lg group"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1530023367847-a683933f4172?q=80&w=1200&auto=format&fit=crop"
-                  alt="Our team creating floral arrangements"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  src={about_img}
+                  alt="Đội ngũ Sammy Flowers"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 p-8 bg-white/50"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
 

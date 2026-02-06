@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Flower, Instagram, Facebook, Twitter } from "lucide-react";
+import logo from "@/assets/sammy-logo.svg";
 
 const Footer = () => {
   return (
@@ -8,11 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand + Social Media */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Flower className="h-6 w-6 text-primary" />
-              <span className="font-heading text-xl font-semibold uppercase tracking-wider">
-                Sammy Flowers
-              </span>
+            <div className="flex items-center">
+              <img src={logo} alt="Sammy Flowers" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Trao niềm tin – nhận trọn hài lòng. Sammy Flowers luôn mong góp thêm sắc màu hạnh phúc, gửi trọn sự chu đáo và tinh tế tới quan viên hai họ.
